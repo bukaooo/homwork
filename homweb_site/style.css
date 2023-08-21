@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&family=Roboto:ital,wght@0,500;0,700;0,900;1,400&display=swap');
+
+:root{
+    --Playfair: 'Playfair Display', serif;
+    --quicksand:  'Quicksand', sans-serif;
+    --roboto:  'Roboto', sans-serif;
+    --dark: #3c393d;
+    --exDark: #2b2b2b;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.logo i{
+    font-size: 22px;
+}
+.logo{
+    display: flex;
+    gap: 2px;
+    font-family: var(--quicksand);
+    font-weight: 900;
+}
+.navbar{
+    width: 100%;
+    height: 10vh;
+    background: #fff ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    
+ 
+}
+.home ul{
+display: flex;
+text-decoration: none;
+gap: 40px;
+}
+.home ul li{
+    display: flex;
+    text-decoration: none;
+    font-family: var(--quicksand);
+   color: rgb(0, 51, 140);
+}
+.pej1{
+    width: 100%;
+    height: 100vh;
+    /* background-color: cadetblue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.hovli{
+    width: 68%;
+    height: 40%;
+    /* background: blue; */
+    text-align: center;
+    font-family: var(--quicksand);
+}
+.hovli h1{
+    font-weight:bolder;
+    font-size: 60px;
+    /*   */
+}
+.hovli p{
+    line-height: 25px;
+}
+.bic{
+    width: 150px;
+    height: 35px;
+    border-radius: 16px;
+    border: none;
+    margin-top: 30px;
+    background-color: rgb(12, 59, 141);
+    color: #fff;
+    font-family: var(--quicksand);
+    font-weight: 600;
+}
+.pej2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rasm{
+    width: 90%;
+    height: 90%;
+   
+    border-radius: 20px;
+    
+
+}
+.rasm img{
+    width: 100%;
+    height: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pej3{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 10px;
+
+}
+.gullar1{
+    width: 50%;
+    height: 90%;
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.gullar1 img{
+    width: 90%;
+    height: 65%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gullar2{
+    width: 40%;
+    height: 90%;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+.matnlar{
+    width: 90%;
+    height: 80%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.matnlar h1{
+   font-family: var(--roboto);
+  font-size: 60px;
+}
+.matnlar p{
+    font-family: var(--quicksand);
+     font-size: 20px;
+}
+.btn{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(12, 59, 141);
+    color: #fff;
+    font-size: var(--roboto);
+
+}
+.pej4{
+    widows: 100%;
+    height: 100vh;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.room{
+    width: 80%;
+    height: 40%;
+    background-color: var(--exDark);
+    display: flex;
+    gap: 10px;
+     
+
+}
+.soz1{
+    width: 50%;
+    height: 100%;
+    background-color: aqua;
+    /* line-height: 20px; */
+}
+.soz1 h1{
+ font-family: var(--Playfair);
+ font-size: 35px;
+}
+.bux{
+    width: 150px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(12, 59, 141) ;
+    color: #fff;
+    font-family: var(--roboto);
+    position: relative;
+    overflow: hidden;
+}
+.bux::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+
+    width: 100%;
+    height: 100%;
+    background: yellowgreen;
+    transition: .5s;
+    border-radius: 20px;
+   
+}
+.bux:hover::before{
+    left: 0;
+    color: #fff;
+}
+.bux:hover span{
+    color: black;
+}
